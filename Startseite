@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="well">
+        <h2>Calories Rechner</h2>
+        <form id="user-input">
+          <div class="form-group">
+            <label for="contactFirstName">Gewicht</label>
+            <input type="text" class="" id="Gewicht" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="grosse">Grosse</label>
+            <input type="text" class="" id="grosse" placeholder="cm">
+          </div>
+          <div class="form-group">
+            <label for="grosse">Alter</label>
+            <input type="number" class="" id="heightInches" placeholder="" min="1" max="105">
+          </div>
+          <div class="form-group">
+            <label for="Gender">Gender</label>
+            <label for="genderMale">Maennlich</label>
+            <input type="radio" class="" id="genderMale" placeholder="" value="Maennlich">
+            <label for="genderFemale">Female</label>
+            <input type="radio" class="" id="genderFemale" placeholder="" value="Weiblich">
+          </div>
+
+          <div class="form-group">
+            <input type="submit" class="submit-button btn" id="genderFemale" placeholder="">
+          </div>
+        </form>
+      </div>
+      <!--<div class="well">
+        <div ng-controller="ExampleController">
+          <form novalidate class="simple-form">
+            Name:
+            <input type="text" ng-model="user.name" />
+            <br /> E-mail:
+            <input type="email" ng-model="user.email" />
+            <br /> Gender:
+            <input type="radio" ng-model="user.gender" value="male" />male
+            <input type="radio" ng-model="user.gender" value="female" />female
+            <br />
+            <input type="button" ng-click="reset()" value="Reset" />
+            <input type="submit" ng-click="update(user)" value="Save" />
+          </form>
+        </div>
+      </div>-->
+
+    </div>
+    
+      <div class="row" id="men-cal-display">
+        <h3>Men</h3>
+        <h4><span class="cals-for-men"></span></h4>
+      </div>
+      <div class="row" id="women-cal-display">
+        <h3>Women</h3>
+        <h4><span class="cals-for-women"></span></h4>
+      </div>
+
+<!--      <div class="row">
+        <pre>form = {{user | json}}</pre>
+        <pre>master = {{master | json}}</pre>
+      </div>-->
+    </div>
+  </div>
+</div>

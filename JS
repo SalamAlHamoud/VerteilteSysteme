@@ -1,0 +1,18 @@
+
+var gewichtInKilograms
+var grosse;
+var alter;
+var gender;
+
+age = 33;
+weightInPounds = 157;
+grosse = 5;
+
+gender = "female";
+
+if (gender == "Weiblichb") {
+  $('div #men-cal-display').hide();
+} else {
+  $('div #men-cal-display').show();
+  $('div #women-cal-display').hide();
+};
