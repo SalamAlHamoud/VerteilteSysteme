@@ -1,0 +1,26 @@
+{
+  "1":{
+    "NR":1,
+  "name":"salam",
+  "frau":"true",
+  "alter":26,
+  "gewicht":68,
+  "grosse":170
+},
+ "2":{
+   "NR":2,
+  "name":"max",
+  "frau":"false",
+  "alter":25,
+  "gewicht":80,
+  "grosse":180
+},
+"3":{
+  "NR":3,
+ "name":"tim",
+ "frau":"false",
+ "alter":20,
+ "gewicht":80,
+ "grosse":176
+}
+}

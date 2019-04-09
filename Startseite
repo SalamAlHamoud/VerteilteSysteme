@@ -9,7 +9,7 @@
             <input type="text" class="" id="Gewicht" placeholder="">
           </div>
           <div class="form-group">
-            <label for="grosse">Grosse</label>
+            <label for="grosse">grosse</label>
             <input type="text" class="" id="grosse" placeholder="cm">
           </div>
           <div class="form-group">
@@ -47,7 +47,7 @@
       </div>-->
 
     </div>
-    
+
       <div class="row" id="men-cal-display">
         <h3>Men</h3>
         <h4><span class="cals-for-men"></span></h4>

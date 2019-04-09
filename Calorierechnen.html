@@ -1,0 +1,99 @@
+<!-- HTMl-Seite für Meldung schreiben und die Übersicht -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Calorierechnen</title>
+        <link rel="stylesheet" href="/Calorierechnen.css" />
+        <script language="javascript" type="text/javascript" src="/Calorierechnen.js"></script>
+        <script>
+            document.getElementById("default").click();
+        </script>
+    </head>
+    <body>
+        <header>
+            <a href="/"><img src="Logo.png" alt="Logo" id="logo_salam"/></a>
+            <!--Tabreiter-->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Meldung schreiben')">Meldung schreiben</button>
+                <button class="tablinks" onclick="openTab(event, 'Übersicht')">Übersicht</button>
+            </div>
+        </header>
+        <main id="main">
+
+            <!--Tab Nr.1-->
+            <div id="Calorierechnen" class="tabcontent">
+                <h3>Calorierechnen</h3>
+                <div class="container">
+                    <form id="formID">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for"labelName">Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="inputName" placeholder="Nachname_Vorname">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for"labelID">gewicht</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="inputID" placeholder="gewicht">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for"labelKB">grosse</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="inputKB" placeholder="grosse">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for"labelText">Alter</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="inputLB" placeholder="Name"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <br />
+                            <input class="submitButton" type="submit" value="Absenden" action="submit()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--Tab Nr.2-->
+            <div id="Übersicht" class="tabcontent">
+                <h3>Übersicht</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+
+                            <th>Name</th>
+                            <th>Alter</th>
+                            <th>gewicht</th>
+                            <th>grosse</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td value="${meldung.getName()}"></td>
+                            <td value="${meldung.getNr()}"></td>
+                            <td value="${meldung.getFrau()}"></td>
+                            <td value="${meldung.getAlter()}"></td>
+                            <td value="${meldung.getgewicht()}"></td>
+                            <td value="${meldung.getgrosse()}"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+    </body>
+</html>
